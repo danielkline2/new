@@ -1,4 +1,4 @@
-The code is running on https://danielkline2.github.io/
+The code is running on https://danielkline2.github.io/ and https://www.klinetech.online/gallery
 
 This Repository is the dev code
 
