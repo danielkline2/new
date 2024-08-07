@@ -36,7 +36,7 @@ function App() {
       </div>)
     
   }
-  
+
   const CarouselComponent = (obj) => { 
 
     return (
@@ -58,9 +58,9 @@ function App() {
     </div>)
   }
 
- 
- 
- 
+
+
+
 
   if(!!useFullImage){
     return (
