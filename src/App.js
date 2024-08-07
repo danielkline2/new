@@ -31,7 +31,7 @@ function App() {
   const PicComponent = (pic, species) => {
     return(
       <div key={species}>
-        <img src={pic} width={"80vw"}/>
+        <img src={pic} width={"80vw"} alt={species}/>
         {!isMobile && <p className="legend">{species}</p>}
       </div>)
     
