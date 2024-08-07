@@ -79,7 +79,7 @@ function App() {
           &&
           images.length > 0 
           &&
-            images.slice(!!isMobile ? 0 : 0, !!isMobile ? 6 : -1).map((obj) =>{
+            images.slice(0, !!isMobile ? 6 : -1).map((obj) =>{
             return (CarouselComponent(obj))
           })}
       </div>  
@@ -96,14 +96,14 @@ function App() {
           <Switch
             isOn={useFullImage}
             onColor="#EF476F"
-            handleToggle={() => {console.log('useFullImageInitial: ',useFullImage);setUseFullImage(!useFullImage);console.log('useFullImageFinal: ',useFullImage);}}
+            handleToggle={() => setUseFullImage(!useFullImage)}
           />
         </div>
         {resizedImages
               &&
               resizedImages.length > 0 
               &&
-              resizedImages.slice(!!isMobile ? 0 : 0).map((obj) =>{
+              resizedImages.map((obj) =>{
                 return (CarouselComponent(obj))
               })}
       </div>  
